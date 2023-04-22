@@ -11,7 +11,9 @@ players = 1024
 port = 7788
 tags = [ 'customTag1', 'customTag2', 'customTag3', 'customTag4' ]
 
-resources = [ 
+resources = [
+    # Append Mods First
+    'webviews',
     'core' 
 ]
 

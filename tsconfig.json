@@ -1,22 +1,52 @@
 {
     "compilerOptions": {
+        "baseUrl": "src",
         "typeRoots": ["./node_modules/@types", "./node_modules/@altv"],
         "removeComments": true,
         "noUnusedLocals": false,
         "noUnusedParameters": false,
         "noImplicitReturns": true,
-        "moduleResolution": "node",
-        "resolveJsonModule": true,
         "allowJs": true,
+        "resolveJsonModule": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "module": "esNext",
-        "target": "esNext",
-        "outDir": "./resources",
-        "rootDir": "./src",
+        "moduleResolution": "node",
         "allowSyntheticDefaultImports": true,
-        "declaration": false
+        "composite": false,
+        "forceConsistentCasingInFileNames": true,
+        "strict": false,
+        "module": "AMD",
+        "target": "ES2022",
+        "outDir": "athena-cache",
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "outFile": "typedefs.ts"
     },
-    "include": ["./src/**/*.ts"],
-    "exclude": ["node_modules", "**/*.spec.ts", "resources", "**/*.json"]
+    "include": [
+        "src/**/*.ts",
+        "src-webviews/**/*.ts",
+        "src-webviews/**/*.d.ts",
+        "src/**/*.ts",
+        "src/**/*.d.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+        "src/core/plugins/**/webview/**.ts",
+        "src/core/plugins/**/webview/**.vue",
+        "src/core/plugins/**/components/**.vue"
+    ],
+    "exclude": [
+        "resources",
+        "scripts",
+        "altv-athena-cache",
+        "athena-cache",
+        "node_modules",
+        "cache",
+        "crashdumps",
+        "data",
+        "doc",
+        "modules",
+        "screenshots"
+    ]
 }

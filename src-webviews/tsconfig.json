@@ -1,0 +1,26 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "typeRoots": ["../node_modules/@altv"],
+        "target": "es5",
+        "module": "commonjs",
+        "jsx": "preserve",
+        "esModuleInterop": true,
+        "lib": ["esnext", "dom"]
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.d.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+        "../src/core/plugins/**/webview/**.ts",
+        "../src/core/plugins/**/webview/**.vue",
+        "../src/core/plugins/**/components/**.vue"
+    ],
+    "exclude": [
+        "../src/core/server/**",
+        "../src/core/client/**",
+        "../src/core/plugins/**/server/**",
+        "../src/core/plugins/**/client/**"
+    ]
+}

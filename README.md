@@ -1,5 +1,5 @@
 <p align="center" style="font-size: 26px">
-	<b>Typescript Boilerplate for alt:V - v5.0.1</b>
+	<b>Typescript Boilerplate for alt:V with Vue - v5.0.1</b>
 </p>
 <p align="center">
 	<img src="https://thumbs.gfycat.com/FabulousFlawlessLamb-size_restricted.gif" width="350" title="hover text">
@@ -24,6 +24,7 @@ A simple Typescript Boilerplate that builds incredibly fast using the [SWC Libra
 -	Auto Download Resources
 -	Single Resource Code Support
 -	Fastest Auto Reconnect Time on Recompile
+-	Built-in Vue for WebViews
 
 # Installation
 
@@ -79,6 +80,14 @@ This will automatically reconnect your alt:V Client if you have `debug` mode tur
 
 ```
 npm run dev
+```
+
+## WebView Previews
+
+If you need to modify the WebView and want to work out of the browser, use the following command.
+
+```
+npm run vue-dev
 ```
 
 ## End Server Runtime
